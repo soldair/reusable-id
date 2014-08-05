@@ -4,7 +4,7 @@ module.exports = function(){
     ids:{},
     max:0,
     get:function(){
-      for(var i=0;i<this.max;++i){
+      for(var i=1;i<this.max;++i){
         if(!this.ids[i]){
           this.ids[i] = true;
           return i;
@@ -16,8 +16,8 @@ module.exports = function(){
       return this.max;
     },
     release:function(id){
+      if(this.ids[id] && id == this.max) this.max--;
       delete this.ids[id];
-      if(id == this.max) this.max--;
     }
   }
 

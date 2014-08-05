@@ -1,0 +1,17 @@
+{
+  "name": "reusable-id",
+  "description": "reuse sequential ids but only alow unique ids to be used at the same time.",
+  "version": "0.0.2",
+  "repository": {
+    "url": "git://github.com/soldair/reusable-id.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "author":"Ryan Day",
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "~2.3.2"
+  }
+}

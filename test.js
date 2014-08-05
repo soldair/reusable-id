@@ -9,7 +9,13 @@ test("can reuse ids",function(t){
   t.equals(id1,1,'should be id 1');
 
   var id2 = ids.get()
+
+  t.equals(id2,2,'should be id 2');
+
   var id3 = ids.get()
+
+
+  t.equals(id3,3,'should be id 3');
 
   ids.release(id2)
 
